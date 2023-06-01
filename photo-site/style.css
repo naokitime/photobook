@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 0.85rem;
+  background-color: rgb(224, 235, 246);
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.section-index {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.section-detail {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 10px 0;
+  padding-top: 30px;
+}
+
+/* -------------------------------------------
+ヘッダー
+----------------------------------------------*/
+
+#header {
+  margin-top: 30px;
+}
+
+#header h1 {
+  width: 160px;
+  padding: 20px 0;
+}
+
+/* -------------------------------------------
+メイン
+----------------------------------------------*/
+
+.mainvisual {
+  margin-bottom: 60px;
+}
+
+/* -------------------------------------------
+index
+----------------------------------------------*/
+
+.inner ol {
+  padding-left: 18px;
+}
+
+.inner ol li {
+  margin-bottom: 20px;
+  color: rgb(139, 139, 139);
+}
+
+/* -------------------------------------------
+detail
+----------------------------------------------*/
+
+.section-detail {
+  margin-bottom: 30px;
+}
+
+.section-detail img {
+  width: 220px;
+  margin-right: 30px;
+}
+
+.section-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-text-contant h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.section-text-contant {
+  width: 300px;
+}
+
+.section-text-contant ul {
+  color: rgb(130, 130, 130);
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  border-top: 1px solid rgb(124, 124, 124);
+  border-bottom: 1px solid rgb(124, 124, 124);
+  padding: 20px 0;
+}
+
+.section-text-contant ul dt {
+  width: 25%;
+}
+
+.section-text-contant ul dd {
+  width: 75%;
+}
+
+.section-text-contant p {
+  margin-bottom: 20px;
+}
+
+.section-text-contant a {
+  color: rgb(89, 89, 88);
+}
+
+/* -------------------------------------------
+フッター
+----------------------------------------------*/
+
+footer {
+  margin: 0 auto;
+}
+
+.site-footer {
+  width: 600px;
+  height: 30px;
+}
+
+.site-footer p {
+  color: #333; /* テキスト色をダークグレーに設定 */
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    padding: 0 4%;
+  }
+
+  .container,
+  .section-index,
+  .section-detail {
+    width: 100%; /* コンテナの幅を100%に設定 */
+    margin: 0;
+  }
+
+  .inner {
+    width: 90%; /* インナーコンテナの幅を90%に設定し、サイドに少し余白を設ける */
+  }
+
+  .section-text {
+    flex-direction: column; /* imgと.section-text-contantを縦に並べる */
+  }
+
+  .section-detail img {
+    width: 100%; /* 画像の幅を100%に設定 */
+    margin-bottom: 20px;
+  }
+
+  .section-text-contant {
+    width: 100%; /* .section-text-contantの幅を100%に設定 */
+  }
+  footer {
+    margin-left: 20px;
+  }
+}
